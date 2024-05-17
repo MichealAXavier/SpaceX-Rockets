@@ -1,0 +1,154 @@
+body{
+  background-color:rgb(238, 238, 238);
+}
+.container {
+  display: flex;
+}
+.section1 {
+  width: 30%;
+}
+.section2 {
+  width: 70%;
+}
+.filter-button-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, auto); 
+  grid-gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px; 
+  grid-column-gap: 90px;
+
+}
+.filter-button-row button {
+  margin: 10px;
+}
+.filter-button-row button.active {
+  
+  border:2px solid blue;
+  color: #fff;
+}
+.launch-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.launch-card {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 210px;
+  background-color: #ffffff;
+  height: 470px;
+}
+.launch-image {
+  width: 80%;
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: rgb(238, 238, 238);
+}
+
+.launch-details {
+  padding: 5px;
+  
+
+}
+
+.launch-filter {
+  background-color: #ffffff; 
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 90%;
+  
+
+}
+.h2{
+  text-align: center;
+  text-decoration: underline; 
+}
+
+.small-button {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 8px; 
+  font-size: 14px; 
+  
+  border-radius: 4px; 
+  border: 2px solid transparent;
+  cursor: pointer; 
+  width: 80px;
+  
+  
+}
+
+.small-button:hover {
+  background-color: #45a049; 
+}
+.h3{
+  font-size: 30px;
+  color: #07407c;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.label{
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.value{
+  
+  color: #07407c;
+  text-decoration: bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  border: 1px solid #000;
+  height: 30px;
+  width: 290px;
+  margin-left: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.h3:hover + .tooltip {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+  
+  .section1, .section2 {
+    width: 100%; /* Make sections take full width */
+  }
+}
