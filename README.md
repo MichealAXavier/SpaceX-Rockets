@@ -1,4 +1,5 @@
-# vue-spacex-comp
+https://spacex-rockets-vue.netlify.app/
+# vue-spacex-rocket-details
 
 This template should help get you started developing with Vue 3 in Vite.
 
